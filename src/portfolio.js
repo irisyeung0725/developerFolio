@@ -7,15 +7,16 @@
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: false // set to false to use static SVG
 };
 
 const greeting = {
   username: "Shijing Yang",
   title: "Hi all, I'm Shijing",
-  subTitle: emoji(
-    "A data enthusiast currently studying M.S. in data science 👩🏻‍💻 with hands on industry experience in data science, data analytics, statistical modeling and related fields 📝 Currently I am looking for full time opportunities in data science, data analytics and data engineering fields 🧐"
+  subTitle1: emoji(
+    "A data enthusiast currently studying M.S. in data science 👩🏻‍💻 with hands on industry experience in data science, data analytics, statistical modeling and related fields 📝 "
   ),
+  subTitle2: "Currently I am looking for full time opportunities in data science, data analytics and data engineering fields 🧐",
   resumeLink:
     "https://drive.google.com/file/d/1VDTJRsRu5rvcWJJOnikYrnzicuwYDVuM/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -40,8 +41,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: emoji("What I Do"),
-  subTitle: emoji("A curious human being who enjoys exploring data and reveals interesting insights 📊 "),
+  title: emoji("My Skills and What I Do"),
+  subTitle: emoji("A curious human being who enjoys exploring data and reveals insights 📊 "),
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -213,8 +214,10 @@ const workExperiences = {
       date: "May 2021 – Aug 2021",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed an interactive web-based market exploration tool in Python resulted in an increase efficiency of 75%",
+        "Optimized 20+ multi-nested SQL queries with 25TB data on AWS to increase query run time by at least 33%",
+        "Performed EDA on 20+ tables across 5+ robot functionalities and visualized results with Plotly and HTML",
+        "Collaborated with data engineers and data scientists to create 3 new cache tables and address data quality issues"
       ]
     },
     {
