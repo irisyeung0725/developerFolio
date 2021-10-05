@@ -14,11 +14,11 @@ const greeting = {
   username: "Shijing Yang",
   title: "Hi all, I'm Shijing",
   subTitle1: emoji(
-    "A data enthusiast currently studying M.S. in data science 👩🏻‍💻 with hands on industry experience in data science, data analytics, statistical modeling and related fields 📝 "
+    "A data enthusiast currently studying M.S. in data science 👩🏻‍💻 with hands on industry experience in data science, data analytics, database management, machine learning and related fields 📝 "
   ),
-  subTitle2: "Currently I am looking for full time opportunities in data science, data analytics and data engineering fields 🧐",
+  subTitle2: emoji("Currently I am looking for full time opportunities in data science, data analytics and data engineering fields starting from Jan. 2022 🧐"),
   resumeLink:
-    "https://drive.google.com/file/d/1VDTJRsRu5rvcWJJOnikYrnzicuwYDVuM/view?usp=sharing",
+    "https://drive.google.com/file/d/1vy78Jk8yE-NM4HFhSTBJJCcKGT8o-PZk/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,12 +45,16 @@ const skillsSection = {
   subTitle: emoji("A curious human being who enjoys exploring data and reveals insights 📊 "),
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Apply statistical methods and deep learning algorithms to build ML models "
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Write advanced SQL queries to generate tables with clean data and optimize run time"
+    ),
+    emoji(
+      "⚡ Build interactive dashboards through BI tools (e.g. Tableau, Mode Analytics) or through front-end development tools (e.g. HTML, CSS & Javascript)"
+    ),
+    emoji("⚡ Perform Exploratory Data Analyisis (EDA) on given datasets and visualize intersting findings to dig business insights"),
+    
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -160,7 +164,7 @@ const educationInfo = {
     {
       schoolName: "Beijing Normal University",
       logo: require("./assets/images/bnuLogo.png"),
-      subHeader: "Bachelor of Arts in Finance, minor in management",
+      subHeader: "Bachelor of Arts in Finance, minor in management, cum laude",
       duration: "September 2014 - June 2018",
       gpa: "3.63 / 4",
       desc: "Ranked top 5% in the program and graduated distinction.",
@@ -172,7 +176,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Python", //Insert stack or technology you have experience in
@@ -212,9 +216,10 @@ const workExperiences = {
       company: "iRobot",
       companylogo: require("./assets/images/irobot-logo-2.png"),
       date: "May 2021 – Aug 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "iRobot Summer Internship Program",
       descBullets: [
         "Developed an interactive web-based market exploration tool in Python resulted in an increase efficiency of 75%",
+        "Performed propensity scoring to assist selecting robot groups (e.g. control group and experimental group) for software beta testing with Logistic Regression",
         "Optimized 20+ multi-nested SQL queries with 25TB data on AWS to increase query run time by at least 33%",
         "Performed EDA on 20+ tables across 5+ robot functionalities and visualized results with Plotly and HTML",
         "Collaborated with data engineers and data scientists to create 3 new cache tables and address data quality issues"
@@ -225,7 +230,14 @@ const workExperiences = {
       company: "Homesite Insurance",
       companylogo: require("./assets/images/homesite-logo.png"),
       date: "Jan 2021 – May 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "WPI Graduate Qualifying Project",
+      descBullets: [
+        "Optimized internal pricing GLM model R package by transitioning to a scalable ML platform such as H2O with 50% increased run time efficiency",
+        "Built additional regularization models (e.g. ElasticNet, Lasso & Ridge) to provide better feature selection result",
+        "Utilized lift charts, double lift charts, Gini index, ROC curve etc. to visualize and identify model performance",
+        "Led 3 team members to manage several branches on Git to work on different parts of the package for better version control",
+        "Documented work and creasted API's on confluence page for future development "
+      ]
     },
     // {
     //   role: "Research Assistant",
@@ -238,8 +250,13 @@ const workExperiences = {
       role: "Data and Operation Analyst Intern",
       company: "Bank of China",
       companylogo: require("./assets/images/boc-logo.jpeg"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "June 2018 – Aug 2018",
+      desc: "BOC Summer Analyst Program",
+      descBullets: [
+        "Wrangled 3TB unstructured data in Python on distributed file system and visualized data in reports",
+        "Redesigned a database model for storing over 4GB of customers’ loan data with multi-nested SQL queries",
+        "Created 5 Python scripts to automate data output from excel sheets that was previously done manually with 50% increase efficiency"
+      ]
     }
   ]
 };
@@ -248,36 +265,87 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Related Projects",
+  subtitle1: emoji("📚 Some projects that I did for my professor, the school, my classes, or my interest"),
+  subtitle2: emoji("🌟 To view more projects, please feel free to visit my"),
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Apache_Hive_logo.svg"),
+      projectName: "Resursive Query on Hive & Hadoop",
+      projectDesc: "Design an interface to allow recursive SQL queries implementation with Hive+Hadoop",
+      footerLink: [
+        {
+          name: "View Report",
+          url: "https://github.com/irisyeung0725/DS503-Big-Data-Management/blob/master/report.pdf"
+        },
+        {
+          name: "Visit Github Repository",
+          url: "https://github.com/irisyeung0725/DS503-Big-Data-Management"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/tripAdvisor-logo.png"),
+      projectName: "Hotel Search Engine",
+      projectDesc: "Develop a hotel search engine that supports free user-input queries based on history user text reviews from Trip-Advisor",
+      footerLink: [
+        {
+          name: "View Website",
+          url: "https://hotelcritic.azurewebsites.net/"
+        },
+        {
+          name: "Visit Github Repository",
+          url: "https://github.com/irisyeung0725/CS547_Hotel_Critic"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Zillow-logo.jpeg"),
+      projectName: "House Price Prediction with Advanced Linear Regression",
+      projectDesc: "A Kaggle competition to use advanced regression techniques with limited data to predict house prices for residential homes in Ames, Iowa",
+      footerLink: [
+        {
+          name: "View Report",
+          url: "https://github.com/YufeiLinUlysses/DS502FinalProject/blob/main/Final_Report.pdf"
+        },
+        {
+          name: "Visit Github Repository",
+          url: "https://github.com/irisyeung0725/DS502FinalProject"
+        }
+      ]
+    },
+    
+    {
+      image: require("./assets/images/wpi-logo-website.png"),
+      projectName: "DiverseOptima",
+      projectDesc: "Originally based on Porfessor Andrew C. Trapp's paper. The tool is to apply the concept mentioned in the paper and find diverse optima and near-optima to binary integer programs",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://diverseoptima.wpi.edu/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/stock-logo.jpeg"),
+      projectName: "Stock Trading Strategy",
+      projectDesc: "Apply different machine learning methods (e.g. svm, random forest, CNN, LSTM) to compare model performance on stock decision making suggestion for stock traders",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://bl75d.github.io/CS539MLFinalProj/"
+        },
+        {
+          name: "Visit Github Repository",
+          url: "https://github.com/irisyeung0725/CS539MLFinalProj"
         }
       ]
     }
@@ -295,29 +363,33 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "DataRobot Essentials",
+      subtitle:
+        "DataRobot is the AI Cloud leader, delivering a unified platform for all users, all data types, and all environments to accelerate delivery of AI to production",
+      image: require("./assets/images/datarobot-logo.png"),
+      footerLink: [
+        {
+          name: "ID: 56356528",
+          url: ""
+        }
+      ]
+    },
+    {
       title: "JLPT N3",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "FJLPT is a standardized criterion-referenced test to evaluate and certify Japanese language proficiency for non-native speakers",
       image: require("./assets/images/jlptLogo.png"),
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "ID: N3A164790A",
+          url: ""
         }
       ]
     },
     {
       title: "Bloomberg Market Concepts",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "A self-paced e-learning course that provides an interactive introduction to the financial markets",
       image: require("./assets/images/bloombergLogo.jpeg"),
       footerLink: [
         {
@@ -332,14 +404,29 @@ const achievementSection = {
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Udemy Online-course Certificate",
+      subtitle: "Completed Certifcation of SQL - MySQL for Data Analytics and Business Intelligence on Sept. 30, 2019",
+      image: require("./assets/images/Udemy-logo.png"),
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification", 
+          url: "https://www.udemy.com/certificate/UC-WCP90TOC/"
+        },
+      ]
+    },
+
+    {
+      title: "Mendix Rapid Developer",
+      subtitle: "A low-code collaborative development platform for mobile and web-based applications",
+      image: require("./assets/images/Mendix-logo.png"),
+      footerLink: [
+        {
+          name: "ID: 16912", 
+          url: ""
+        },
+        {
+          name: "View Mendix", 
+          url: "https://www.mendix.com/"
         }
       ]
     }
@@ -404,11 +491,11 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Reach Out to Me 😄"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "7742323355",
-  email_address: "syang6@wpi.edu"
+    "I am open to anything related to Data Scientist, Data Engineer, or Data Analyst position starting January 2022. Please feel free to reach out to me if you have any questions!",
+  number: emoji("☎️: (774)-232-3355"),
+  email_address: emoji("📧: syang6@wpi.edu")
 };
 
 // Twitter Section

@@ -29,8 +29,22 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+            {bigProjects.subtitle1}
           </p>
+
+          <p
+            className={
+              isDark
+                ? "dark-mode project-subtitle"
+                : "subTitle project-subtitle"
+            }
+          >
+            {bigProjects.subtitle2} <a href="https://github.com/irisyeung0725">
+            Github Page
+          </a>
+          </p>
+
+
 
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
