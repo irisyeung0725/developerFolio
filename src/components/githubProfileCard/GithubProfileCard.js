@@ -43,7 +43,7 @@ export default function GithubProfileCard({prof}) {
             )}
             <div className="email-div">
               <span className="desc-prof">
-                <b>📧 </b> <a href='mailto: syang6@wpi.edu'>syang6@wpi.edu</a>
+                <b>Email </b> <a href='mailto: syang6@wpi.edu'>syang6@wpi.edu</a>
               </span>
             </div>
 
