@@ -307,7 +307,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/Zillow-logo.jpeg"),
+      image: require("./assets/images/Zillow-logo.png"),
       projectName: "House Price Prediction with Advanced Linear Regression",
       projectDesc: "A Kaggle competition to use advanced regression techniques with limited data to predict house prices for residential homes in Ames, Iowa",
       footerLink: [
