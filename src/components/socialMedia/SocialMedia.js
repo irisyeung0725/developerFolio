@@ -47,6 +47,18 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.medium ? (
+        <a
+          href={socialMediaLinks.medium}
+          className="icon-button medium"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-medium"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}
@@ -91,18 +103,6 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-twitter"></i>
-          <span></span>
-        </a>
-      ) : null}
-
-      {socialMediaLinks.medium ? (
-        <a
-          href={socialMediaLinks.medium}
-          className="icon-button medium"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-medium"></i>
           <span></span>
         </a>
       ) : null}

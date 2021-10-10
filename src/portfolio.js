@@ -28,6 +28,7 @@ const socialMediaLinks = {
   microsoft: "syang6@wpi.edu",
   github: "https://github.com/irisyeung0725",
   linkedin: "https://www.linkedin.com/in/syang6/",
+  medium: "https://medium.com/@syang66",
   // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/profile.php?id=100028009863641",
   instagram: "https://www.instagram.com/ii_iiris/",
@@ -439,23 +440,23 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "Sometimes I like to write some blogs and tutorials about things that I learned",
 
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@syang66/how-to-install-ubuntu-on-macos-big-sur-with-virtualbox-9ff2943add92",
+      title: "How to install Ubuntu on macOS Big Sur with VirtualBox",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A simple tutorial on how to install Ubuntu 20.04.3 through virtual machine on macOS due to the most recent update."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@syang66/how-to-set-up-aliases-with-bash-commands-e79549081a95",
+      title: "How to set up aliases with Bash commands",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "A quick tutorial on setting up aliases for applications by taking advantage of Bash scripts"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
